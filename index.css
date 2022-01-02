@@ -1,0 +1,110 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container {
+    display: flex;
+    border: 2px solid red;
+    flex-wrap: wrap;    
+    height: 400px;
+    align-content: center;
+    /* 
+    display: ; flex container를 정의
+    display: flex; 불럭
+    display: inline-flex; 수평
+    flex-flow: ; flex-direction. flex-wrap 의 단축 속성
+        flex-direction: ; flex items의 주 축(main-axis)를 설정, 기본값 row
+            row : 수평, column : 수직
+        flex-wrap: ; flex items의 여러 줄 묶음(줄 바꿈) 설정, 기본값 nowrap 
+            wrap : 여러 줄로 묶음
+            nowrap : 한 줄로 표시
+    justify-content: ; 주축의 정렬 방법을 설정
+        flex-start : 시작점으로 정렬
+        flex-end : 끝점으로 정렬
+        center : 가운데 정렬
+        space-getween : 시작 item은 시작점에, 마지막 item은 끝점에 정렬, 나머지 item은 사이에 고르게 정렬
+        space-around : item을 균등한 여백을 포함하여 정렬
+    align-content: ; 교차 축의 정렬 방법을 설정(2줄 이상)
+        stretch : container의 교차 축을 채우기 위해 item을 늘림
+        flex-start item을 시작점으로 정렬
+        flex-end item을 끝점으로 정렬
+        center item을 가운데 정렬
+        space-between 시작 item은 시작점에 마지막 아이템은 쯭점에 정렬 나머지 item은 사이에 고르게 정렬
+        space-around 아이템을 균등한 여백을 포함하여 정렬
+    align-items: ; 교차 축에서 items의 정렬 방법을 설정(1줄)
+        stretch container의 교차 축을 채우기 위해 item을 늘림
+        flex-start item을 시작점으로 정렬
+        flex-end item을 끝점으로 정렬
+        center item을 가운데 정렬
+        baseline 아이템을 문자 기준선에 정렬
+    */
+}
+.container .item {
+    
+    height: 120px;
+    border: 2px solid #333;
+    flex: 1 1 50px;
+    /*     
+    order: ; flex item의 순서를 설정
+    flex: ;
+        flex-grow: ; flex item의 증가 너비 비율 설정
+            1,2,1 이면 너비가 1/4 2/4 1/4 임
+        flex-shrink: ;flex item의 감소 너비 비율 설정            
+        flex-basis: ; flex item의 (공간 배분 전) 기본 너비 설정
+    align-self: ; 교차 축에서 item의 정렬 방법 설정
+        auto
+        stretch container의 교차 축을 채우기 위해 item을 늘림
+        flex-start item을 시작점으로 정렬
+        flex-end item을 끝점으로 정렬
+        center item을 가운데 정렬
+        baseline 아이템을 문자 기준선에 정렬
+    */
+}
+/* .container .item:first-child {
+    margin-left: 0;
+} */
